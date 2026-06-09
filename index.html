@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Okasha - Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Inter:wght@400;500;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-circle">&#8857;</span>kasha
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-moon" id="theme-icon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile overlay -->
+  <div class="mobile-overlay" id="mobile-overlay">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-eyebrow">&mdash; FULL STACK DEVELOPER</p>
+        <h1>
+          Muhammad <span class="name-highlight">Okasha</span>
+        </h1>
+        <div class="typing-wrapper">
+          <span class="typing-text" id="typing-text"></span><span class="typing-cursor"></span>
+        </div>
+        <p class="hero-bio">
+          Passionate full-stack developer crafting modern web applications with ASP.NET Core, 
+          JavaScript, and clean architecture. Also a freelance graphic designer and 
+          BS Software Engineering student at PUCIT.
+        </p>
+        <div class="hero-actions">
+          <a href="projects.html" class="btn btn-primary"><i class="fas fa-eye"></i> View My Projects</a>
+        </div>
+        <div class="hero-social">
+          <a href="https://github.com/MuhammadOkasha004" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/muhammad-okasha-0386103aa" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.fiverr.com/okashaprince21" target="_blank" rel="noopener" aria-label="Fiverr"><span class="fiverr-icon">fi</span></a>
+        </div>
+      </div>
+
+      <!-- Right: holographic developer illustration -->
+      <div class="hero-illustration">
+        <div class="hologram-container">
+          <div class="glow-ring"></div>
+          <div class="glow-ring"></div>
+          <div class="glow-ring"></div>
+          <div class="dev-silhouette">
+            <svg viewBox="0 0 380 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="tealGrad" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#00D4C8" stop-opacity="0.6"/>
+                  <stop offset="100%" stop-color="#00D4C8" stop-opacity="0.1"/>
+                </linearGradient>
+                <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#0048FF" stop-opacity="0.4"/>
+                  <stop offset="100%" stop-color="#0048FF" stop-opacity="0.05"/>
+                </linearGradient>
+                <filter id="glow">
+                  <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                  <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+                <filter id="glowStrong">
+                  <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+                  <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+              </defs>
+
+              <!-- Glow blob behind -->
+              <circle cx="190" cy="200" r="140" fill="url(#tealGrad)" opacity="0.15"/>
+              <circle cx="190" cy="200" r="100" fill="url(#blueGrad)" opacity="0.1"/>
+
+              <!-- Desk surface -->
+              <rect x="70" y="300" width="240" height="6" rx="3" fill="#00D4C8" opacity="0.3"/>
+              <rect x="80" y="306" width="220" height="4" rx="2" fill="#0048FF" opacity="0.15"/>
+
+              <!-- Person silhouette -->
+              <g filter="url(#glow)">
+                <!-- Head -->
+                <ellipse cx="190" cy="200" rx="28" ry="32" fill="#00D4C8" opacity="0.25"/>
+                <!-- Body -->
+                <path d="M160 240 Q190 230 220 240 L226 296 Q190 290 154 296 Z" fill="url(#tealGrad)" opacity="0.2"/>
+                <!-- Left arm to keyboard -->
+                <path d="M160 255 Q140 270 120 290" stroke="#00D4C8" stroke-width="3" opacity="0.2" fill="none"/>
+                <!-- Right arm -->
+                <path d="M220 255 Q235 265 240 280" stroke="#00D4C8" stroke-width="3" opacity="0.2" fill="none"/>
+              </g>
+
+              <!-- Monitor frame -->
+              <rect x="145" y="230" width="90" height="65" rx="4" fill="none" stroke="#00D4C8" stroke-width="1.5" opacity="0.4"/>
+              <rect x="149" y="234" width="82" height="50" rx="2" fill="#04080F" opacity="0.6"/>
+              <rect x="149" y="234" width="82" height="50" rx="2" fill="none" stroke="#0048FF" stroke-width="0.5" opacity="0.3"/>
+              <!-- Code lines on monitor -->
+              <line x1="156" y1="245" x2="210" y2="245" stroke="#00D4C8" stroke-width="1.5" opacity="0.5"/>
+              <line x1="156" y1="252" x2="195" y2="252" stroke="#0048FF" stroke-width="1.5" opacity="0.4"/>
+              <line x1="156" y1="259" x2="205" y2="259" stroke="#00D4C8" stroke-width="1.5" opacity="0.3"/>
+              <line x1="156" y1="266" x2="185" y2="266" stroke="#0048FF" stroke-width="1.5" opacity="0.2"/>
+              <rect x="185" y="296" width="10" height="4" rx="1" fill="#00D4C8" opacity="0.3"/>
+
+              <!-- Floating code panels -->
+              <g filter="url(#glowStrong)">
+                <rect x="50" y="150" width="80" height="36" rx="4" fill="#080F1A" stroke="#00D4C8" stroke-width="0.5" opacity="0.7"/>
+                <text x="56" y="164" font-family="monospace" font-size="7" fill="#00D4C8" opacity="0.6">&lt;/&gt; code</text>
+                <line x1="56" y1="172" x2="110" y2="172" stroke="#0048FF" stroke-width="1" opacity="0.3"/>
+
+                <rect x="260" y="170" width="75" height="30" rx="4" fill="#080F1A" stroke="#0048FF" stroke-width="0.5" opacity="0.6"/>
+                <line x1="266" y1="182" x2="310" y2="182" stroke="#00D4C8" stroke-width="1" opacity="0.4"/>
+                <line x1="266" y1="189" x2="290" y2="189" stroke="#0048FF" stroke-width="1" opacity="0.3"/>
+
+                <rect x="55" y="110" width="60" height="24" rx="3" fill="#080F1A" stroke="#00D4C8" stroke-width="0.5" opacity="0.5"/>
+                <line x1="60" y1="122" x2="95" y2="122" stroke="#00D4C8" stroke-width="1" opacity="0.3"/>
+                <line x1="60" y1="128" x2="80" y2="128" stroke="#0048FF" stroke-width="1" opacity="0.2"/>
+              </g>
+
+              <!-- Circuit lines -->
+              <path d="M50 180 L30 180 L30 260 L70 260" stroke="#00D4C8" stroke-width="0.5" opacity="0.15" fill="none"/>
+              <path d="M335 200 L350 200 L350 280 L310 280" stroke="#0048FF" stroke-width="0.5" opacity="0.15" fill="none"/>
+              <circle cx="30" cy="180" r="2" fill="#00D4C8" opacity="0.3"/>
+              <circle cx="350" cy="280" r="2" fill="#0048FF" opacity="0.3"/>
+
+              <!-- Pulsing rings -->
+              <circle cx="190" cy="200" r="120" stroke="#00D4C8" stroke-width="0.5" opacity="0.08" fill="none"/>
+              <circle cx="190" cy="200" r="150" stroke="#0048FF" stroke-width="0.5" opacity="0.05" fill="none"/>
+
+              <!-- Data dots -->
+              <circle cx="100" cy="270" r="2" fill="#00D4C8" opacity="0.4"/>
+              <circle cx="280" cy="250" r="2" fill="#0048FF" opacity="0.4"/>
+              <circle cx="150" cy="320" r="1.5" fill="#00D4C8" opacity="0.3"/>
+              <circle cx="230" cy="315" r="1.5" fill="#0048FF" opacity="0.3"/>
+            </svg>
+          </div>
+          <div class="glow-blob"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <span>SCROLL</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- Floating badges -->
+  <section class="floating-badges">
+    <div class="container">
+      <div class="badges-grid">
+        <div class="badge-card reveal">
+          <span class="badge-number">3+</span>
+          <span class="badge-label">Projects</span>
+        </div>
+        <div class="badge-card reveal reveal-delay-1">
+          <span class="badge-number">10+</span>
+          <span class="badge-label">Technologies</span>
+        </div>
+        <div class="badge-card reveal reveal-delay-2">
+          <span class="badge-number">2+</span>
+          <span class="badge-label">Years Coding</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">&#8857;kasha</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="skills.html">Skills</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://github.com/MuhammadOkasha004" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/muhammad-okasha-0386103aa" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.fiverr.com/okashaprince21" target="_blank" rel="noopener"><span class="fiverr-icon">fi</span></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Muhammad Okasha. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/global.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

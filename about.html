@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Muhammad Okasha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Inter:wght@400;500;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-circle">&#8857;</span>kasha
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-moon" id="theme-icon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile overlay -->
+  <div class="mobile-overlay" id="mobile-overlay">
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Page header -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="reveal">About <span>Me</span></h1>
+      <p class="reveal reveal-delay-1">Get to know who I am, what I do, and what drives me as a developer and designer.</p>
+    </div>
+  </section>
+
+  <!-- About content -->
+  <section class="about-page">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Left column -->
+        <div class="about-bio">
+          <h2 class="reveal">Hi, I'm <span>Muhammad Okasha</span></h2>
+          <p class="reveal reveal-delay-1">
+            A passionate software engineering student at the University of the Punjab, Lahore (PUCIT) with a deep love for building 
+            modern, scalable web applications. I specialize in ASP.NET Core and full-stack development, combining clean 
+            architecture with intuitive user interfaces.
+          </p>
+          <p class="reveal reveal-delay-2">
+            Beyond coding, I'm a freelance graphic designer on Fiverr, where I've helped brands establish their visual identity 
+            through custom logo design. I believe in the power of combining technical expertise with creative thinking to deliver 
+            exceptional digital experiences.
+          </p>
+          <div class="about-chips reveal reveal-delay-3">
+            <span class="about-chip"><span>&#128205;</span> Lahore, Pakistan</span>
+            <span class="about-chip"><span>&#127891;</span> PUCIT</span>
+            <span class="about-chip"><span>&#128188;</span> Open to Work</span>
+          </div>
+          <div class="about-stats reveal reveal-delay-4">
+            <div class="stat-item">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">2+</span>
+              <span class="stat-label">Years</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right column - Terminal -->
+        <div class="about-terminal reveal reveal-delay-2">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <span class="terminal-dot red"></span>
+              <span class="terminal-dot yellow"></span>
+              <span class="terminal-dot green"></span>
+              <span class="terminal-title">developer.json &mdash; Visual Studio Code</span>
+            </div>
+            <div class="terminal-body">
+              <div class="terminal-line">
+                <span class="terminal-key">"name"</span>
+                <span class="terminal-colon">:</span>
+                <span class="terminal-value string">"Muhammad Okasha"</span>
+              </div>
+              <div class="terminal-line">
+                <span class="terminal-key">"role"</span>
+                <span class="terminal-colon">:</span>
+                <span class="terminal-value string">"Full Stack Developer"</span>
+              </div>
+              <div class="terminal-line">
+                <span class="terminal-key">"university"</span>
+                <span class="terminal-colon">:</span>
+                <span class="terminal-value string">"PUCIT, University of the Punjab"</span>
+              </div>
+              <div class="terminal-line">
+                <span class="terminal-key">"languages"</span>
+                <span class="terminal-colon">:</span>
+                <span class="terminal-value string">["C#", "Python", "JavaScript", "SQL"]</span>
+              </div>
+              <div class="terminal-line">
+                <span class="terminal-key">"status"</span>
+                <span class="terminal-colon">:</span>
+                <span class="terminal-value boolean">"Open to Work"</span>
+              </div>
+              <div class="terminal-cursor-line">
+                <span class="terminal-prompt">$</span>
+                <span class="terminal-cursor-blink"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">&#8857;kasha</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="skills.html">Skills</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://github.com/MuhammadOkasha004" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/muhammad-okasha-0386103aa" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.fiverr.com/okashaprince21" target="_blank" rel="noopener"><span class="fiverr-icon">fi</span></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Muhammad Okasha. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/global.js"></script>
+</body>
+</html>

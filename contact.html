@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Muhammad Okasha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Inter:wght@400;500;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-circle">&#8857;</span>kasha
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-moon" id="theme-icon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile overlay -->
+  <div class="mobile-overlay" id="mobile-overlay">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html" class="active">Contact</a>
+  </div>
+
+  <!-- Page header -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="reveal">Get In <span>Touch</span></h1>
+      <p class="reveal reveal-delay-1">Have a project, question, or just want to say hi? I'd love to hear from you.</p>
+    </div>
+  </section>
+
+  <!-- Contact content -->
+  <section class="contact-page">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Left: info cards -->
+        <div class="contact-info">
+          <div class="contact-info-card reveal">
+            <div class="info-icon"><i class="fab fa-github"></i></div>
+            <div class="info-content">
+              <div class="info-label">GitHub</div>
+              <div class="info-value"><a href="https://github.com/MuhammadOkasha004" target="_blank" rel="noopener">@MuhammadOkasha004</a></div>
+            </div>
+          </div>
+          <div class="contact-info-card reveal reveal-delay-1">
+            <div class="info-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div class="info-content">
+              <div class="info-label">LinkedIn</div>
+              <div class="info-value"><a href="https://www.linkedin.com/in/muhammad-okasha-0386103aa" target="_blank" rel="noopener">Muhammad Okasha</a></div>
+            </div>
+          </div>
+          <div class="contact-info-card reveal reveal-delay-2">
+            <div class="info-icon"><span class="fiverr-icon">fi</span></div>
+            <div class="info-content">
+              <div class="info-label">Fiverr</div>
+              <div class="info-value"><a href="https://www.fiverr.com/okashaprince21" target="_blank" rel="noopener">okashaprince21</a></div>
+            </div>
+          </div>
+          <div class="contact-info-card reveal reveal-delay-3">
+            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="info-content">
+              <div class="info-label">Location</div>
+              <div class="info-value">Lahore, Pakistan</div>
+            </div>
+          </div>
+          <div class="contact-info-card reveal reveal-delay-4">
+            <div class="info-icon"><i class="fas fa-university"></i></div>
+            <div class="info-content">
+              <div class="info-label">University</div>
+              <div class="info-value">PUCIT, University of the Punjab</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: contact form -->
+        <div class="contact-form-card reveal reveal-delay-1">
+          <h3>Send a Message</h3>
+          <form id="contact-form" action="https://formspree.io/f/xvznryzp" method="POST" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name <span style="color:var(--accent)">*</span></label>
+                <input type="text" id="name" name="name" required placeholder="Your name">
+                <span class="error-msg">Please enter your name</span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email <span style="color:var(--accent)">*</span></label>
+                <input type="email" id="email" name="email" required placeholder="your@email.com">
+                <span class="error-msg">Please enter a valid email</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject <span style="color:var(--accent)">*</span></label>
+              <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+              <span class="error-msg">Please enter a subject</span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message <span style="color:var(--accent)">*</span></label>
+              <textarea id="message" name="message" required placeholder="Tell me about your project or idea..."></textarea>
+              <span class="error-msg">Please write a message</span>
+            </div>
+            <button type="submit" class="form-submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+          </form>
+
+          <div class="form-success" id="form-success">
+            <div class="success-icon">&#10003;</div>
+            <h3>Message Sent!</h3>
+            <p>Thank you for reaching out. I'll get back to you as soon as possible.</p>
+            <button class="btn-reset" id="form-reset">Send Another Message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">&#8857;kasha</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="skills.html">Skills</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://github.com/MuhammadOkasha004" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/muhammad-okasha-0386103aa" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.fiverr.com/okashaprince21" target="_blank" rel="noopener"><span class="fiverr-icon">fi</span></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Muhammad Okasha. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/global.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
