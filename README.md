@@ -2,17 +2,17 @@
 
 <br/>
 
-<a href="https://muhammadokasha004.github.io/MyPortfolio">
+<a href="https://muhammadokasha.vercel.app">
   <img src="https://raw.githubusercontent.com/MuhammadOkasha004/MyPortfolio/main/.github/logo.svg" alt="Okasha Portfolio" width="160" height="160"/>
 </a>
 
 <h1>⊗kasha <sup><sub>Portfolio</sub></sup></h1>
 
 <p>
-  <a href="https://muhammadokasha004.github.io/MyPortfolio"><img src="https://img.shields.io/badge/🌐_Live_Demo-00D4C8?style=for-the-badge&logoColor=04080F&color=00D4C8&labelColor=04080F" alt="Live Demo"/></a>
+  <a href="https://muhammadokasha.vercel.app"><img src="https://img.shields.io/badge/🌐_Live_Demo-00D4C8?style=for-the-badge&logoColor=04080F&color=00D4C8&labelColor=04080F" alt="Live Demo"/></a>
   <a href="https://github.com/MuhammadOkasha004"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=00D4C8" alt="GitHub"/></a>
   <a href="https://www.linkedin.com/in/muhammad-okasha-0386103aa"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="mailto:muhammadokasha004@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+  <a href="https://www.fiverr.com/okashaprince21"><img src="https://img.shields.io/badge/Fiverr-1DBF73?style=for-the-badge&logo=fiverr&logoColor=white" alt="Fiverr"/></a>
 </p>
 
 <p>
@@ -137,7 +137,6 @@ MyPortfolio/
 [![GitHub](https://img.shields.io/badge/GitHub-MuhammadOkasha004-181717?style=for-the-badge&logo=github&logoColor=00D4C8)](https://github.com/MuhammadOkasha004)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Muhammad_Okasha-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammad-okasha-0386103aa)
 [![Fiverr](https://img.shields.io/badge/Fiverr-okashaprince21-1DBF73?style=for-the-badge&logo=fiverr&logoColor=white)](https://www.fiverr.com/okashaprince21)
-[![Email](https://img.shields.io/badge/Gmail-muhammadokasha004-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:muhammadokasha004@gmail.com)
 
 </div>
 
