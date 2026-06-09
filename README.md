@@ -3,10 +3,10 @@
 <br/>
 
 <a href="https://muhammadokasha.vercel.app">
-  <img src="https://raw.githubusercontent.com/MuhammadOkasha004/MyPortfolio/main/.github/logo.svg" alt="Okasha Portfolio" width="160" height="160"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=56&pause=2000&color=00D4C8&center=true&vCenter=true&width=620&height=90&lines=Muhammad+Okasha" alt="Muhammad Okasha"/>
 </a>
 
-<h1>⊗kasha <sup><sub>Portfolio</sub></sup></h1>
+<h3>⊗kasha · Portfolio</h3>
 
 <p>
   <a href="https://muhammadokasha.vercel.app"><img src="https://img.shields.io/badge/🌐_Live_Demo-00D4C8?style=for-the-badge&logoColor=04080F&color=00D4C8&labelColor=04080F" alt="Live Demo"/></a>
